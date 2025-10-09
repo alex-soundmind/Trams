@@ -6,7 +6,8 @@ if (session_status() === PHP_SESSION_NONE) session_start();
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>Кинотеатр</title>
+<link rel="stylesheet" href="style.css">
+<title>Трамвайное депо</title>
 </head>
 <body>
 <header>

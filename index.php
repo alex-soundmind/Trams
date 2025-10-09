@@ -58,7 +58,7 @@ function translate($column) {
         'user_id' => 'ID пользователя',
         'name' => 'ФИО',
         'email' => 'E-mail',
-        'password' => 'Пароль'
+        'password' => 'Пароль',
     ];
     return $map[$column] ?? $column;
 }
