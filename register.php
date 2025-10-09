@@ -5,7 +5,7 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $password = $_POST['password'];
 $type = 'user';
-$pdo->prepare('INSERT INTO users (name, email, password, user_type) VALUES (?, ?, ?, ?)')->execute([$name, $email, $password, $type]);
+$pdo->prepare('INSERT INTO users (name, email, password) VALUES (?, ?, ?)')->execute([$name, $email, $password, $type]);
 header('Location: login.php');
 }
 ?>

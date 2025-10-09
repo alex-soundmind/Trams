@@ -76,14 +76,19 @@ if (!$data) {
     echo '</tr>';
 
 foreach ($data as $row) {
-echo '<tr>';
-foreach ($row as $val) echo '<td>' . htmlspecialchars($val) . '</td>';
-if (isset($_SESSION['user'])) {
-$pk = array_keys($row)[0];
-echo '<td><a href="form.php?table=' . $table . '&id=' . $row[$pk] . '">Редактировать</a> | ';
-echo '<a href="delete.php?table=' . $table . '&id=' . $row[$pk] . '" onclick="return confirm(\'Удалить запись?\');">Удалить</a></td>';
-}
-echo '</tr>';
+    echo '<tr>';
+    foreach ($row as $col => $val) {
+        if ($col === 'password' && $table === 'users' && !isset($_SESSION['user'])) {
+            continue;
+        }
+        echo '<td>' . htmlspecialchars($val) . '</td>';
+    }
+    if (isset($_SESSION['user'])) {
+        $pk = array_keys($row)[0];
+        echo '<td><a href="form.php?table=' . $table . '&id=' . $row[$pk] . '">Редактировать</a> | ';
+        echo '<a href="delete.php?table=' . $table . '&id=' . $row[$pk] . '" onclick="return confirm(\'Удалить запись?\');">Удалить</a></td>';
+    }
+    echo '</tr>';
 }
 echo '</table>';
 }

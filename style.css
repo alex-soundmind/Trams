@@ -100,8 +100,14 @@ button:hover {
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #eee;
     margin-top: 30px;
     font-size: 14px;
-    color: #666;
+    background-color: #333;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
 }
