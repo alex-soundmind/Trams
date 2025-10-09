@@ -12,12 +12,12 @@ if (session_status() === PHP_SESSION_NONE) session_start();
 <body>
 <header>
 <nav>
-<a href="index.php?table=trams">Трамваи</a> |
-<a href="index.php?table=drivers">Водители</a> |
-<a href="index.php?table=routes">Рейсы</a> |
-<a href="index.php?table=maintenance_teams">Ремонтные бригады</a> |
-<a href="index.php?table=repairs">Ремонты</a> |
-<a href="index.php?table=shifts">Смены</a> |
+<a href="index.php?table=trams">Трамваи</a>
+<a href="index.php?table=drivers">Водители</a>
+<a href="index.php?table=routes">Рейсы</a>
+<a href="index.php?table=maintenance_teams">Ремонтные бригады</a>
+<a href="index.php?table=repairs">Ремонты</a>
+<a href="index.php?table=shifts">Смены</a>
 <a href="index.php?table=users">Пользователи</a>
 </nav>
 </header>
