@@ -74,12 +74,11 @@ foreach ($columns as $col) {
     $type = 'text';
     $attrs = 'required';
 
-    if (strpos($col, 'email') !== false) $type = 'email';
-    elseif (strpos($col, 'password') !== false) $type = 'password';
-    elseif (in_array($col, ['duration','capacity','seat'])) $type = 'number';
-    elseif (in_array($col, ['ticket_price'])) { $type = 'number'; $attrs .= ' step="0.01"'; }
+    if (strpos($col, 'id') !== false) $type = 'number';
+    elseif (in_array($col, ['capacity', 'manufacture_year', 'tram_id', 'driver_id', 'team_id'])) $type = 'number';
     elseif (strpos($col, 'date') !== false) $type = 'date';
     elseif (strpos($col, 'time') !== false) $type = 'time';
+    elseif (in_array($col, ['issue_description'])) $type = 'textarea';
 
     echo "<label>$label</label>";
     echo "<input type=\"$type\" name=\"" . htmlspecialchars($col) . "\" value=\"" . htmlspecialchars($val) . "\" $attrs>";
