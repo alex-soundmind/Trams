@@ -32,4 +32,5 @@ if ($error_message) {
     <label>Пароль</label><input name="password" type="password" required>
     <input type="submit" value="Войти">
 </form>
+
 <?php require 'footer.php'; ?>

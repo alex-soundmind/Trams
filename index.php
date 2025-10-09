@@ -89,3 +89,5 @@ echo '</table>';
 }
 if (isset($_SESSION['user'])) echo '<br><a href="form.php?table=' . $table . '"><button>Добавить запись</button></a>';
 ?>
+
+<?php require 'footer.php'; ?>

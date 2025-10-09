@@ -90,3 +90,5 @@ if ($id) echo '<input type="hidden" name="id" value="' . htmlspecialchars($id) .
 echo '<input type="submit" value="Сохранить">';
 echo '</form>';
 ?>
+
+<?php require 'footer.php'; ?>

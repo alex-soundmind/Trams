@@ -22,4 +22,3 @@ if (session_status() === PHP_SESSION_NONE) session_start();
 </nav>
 </header>
 <div class="container">
-<?php require 'footer.php'; ?>
