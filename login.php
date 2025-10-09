@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user = $stmt->fetch();
     if ($user && $password === $user['password']) {
         $_SESSION['user'] = $user;
-        header('Location: index.php?table=movies');
+        header('Location: index.php?table=trams');
         exit;
     } else {
         $error_message = '<p class="error">Неверный email или пароль</p>';
