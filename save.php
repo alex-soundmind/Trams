@@ -1,11 +1,9 @@
 <?php
 require 'config.php';
-
 if (!isset($_SESSION['user'])) die('Требуется авторизация.');
 
 $table = $_POST['table'];
 $id = $_POST['id'] ?? null;
-
 $stmt = $pdo->query("SELECT * FROM $table LIMIT 1");
 $columns = array_keys($stmt->fetch(PDO::FETCH_ASSOC));
 
