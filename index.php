@@ -2,7 +2,7 @@
 require 'header.php';
 
 $tables = [
-    'subscribers' => 'Трамваи',
+    'trams' => 'Трамваи',
     'drivers' => 'Водители',
     'routes' => 'Рейсы',
     'maintenance_teams' => 'Ремонтные бригады',
@@ -11,7 +11,7 @@ $tables = [
     'users' => 'Пользователи'
 ];
 
-$table = $_GET['table'] ?? 'movies';
+$table = $_GET['table'] ?? 'trams';
 if (!isset($tables[$table])) die('<p class="error">Неверная таблица</p>');
 
 $stmt = $pdo->query("SELECT * FROM $table ORDER BY 1");
@@ -19,7 +19,7 @@ $data = $stmt->fetchAll();
 
 function translate($column) {
     $map = [
-        // Таблица: Трамваи (Subscribers)
+        // Таблица: Трамваи
         'tram_id' => 'ID трамвая',
         'model' => 'Модель',
         'capacity' => 'Вместимость',

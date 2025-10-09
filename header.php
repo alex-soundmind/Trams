@@ -18,7 +18,7 @@ if (!isset($_SESSION['user']) || !isset($_SESSION['user']['name_user'])) {
 }
 ?>
 <nav>
-<a href="index.php?table=subscribers">Трамваи</a> |
+<a href="index.php?table=trams">Трамваи</a> |
 <a href="index.php?table=drivers">Водители</a> |
 <a href="index.php?table=routes">Рейсы</a> |
 <a href="index.php?table=maintenance_teams">Ремонтные бригады</a> |

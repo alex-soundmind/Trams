@@ -16,7 +16,7 @@ if ($id) {
 }
 function translate($column) {
     $map = [
-        // Таблица: Трамваи (Subscribers)
+        // Таблица: Трамваи
         'tram_id' => 'ID трамвая',
         'model' => 'Модель',
         'capacity' => 'Вместимость',
