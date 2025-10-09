@@ -16,3 +16,4 @@ header('Location: login.php');
 <label>Пароль</label><input name="password" type="password" required>
 <input type="submit" value="Зарегистрироваться">
 </form>
+<?php require 'footer.php'; ?>
