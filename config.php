@@ -1,8 +1,8 @@
 <?php
-$db   = 'trams';
-$host = 'dpg-d4847mbipnbc73d8hlm0-a.singapore-postgres.render.com';
-$user = 'user';
-$pass = 'RFa4bfOpswyRFBK3cZvaU9okEORsFxYO';
+$db   = 'trams_db';
+$host = 'dpg-d4v9dk3e5dus73a9raig-a.singapore-postgres.render.com';
+$user = 'trams_db_user';
+$pass = 'Gbj0c9Akmi32On4MsJWjH4dLkUCnp31t';
 
 $dsn = "pgsql:host=$host;dbname=$db";
 
